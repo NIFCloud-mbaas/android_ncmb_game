@@ -6,6 +6,7 @@ def envSecretKey = ENV_SECRET_KEY
 
 devicefarm {
     projectName "test_android"
+    devicePool "android" // optional: Defaults to "Top Devices"
     authentication {
        accessKey envAccessKey
        secretKey envSecretKey
@@ -15,7 +16,7 @@ devicefarm {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "mbaas.com.nifcloud.androidncmbgame"
